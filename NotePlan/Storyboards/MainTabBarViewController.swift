@@ -13,7 +13,6 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tabBar.backgroundColor = UIColor.clearColor()
     }
 
     override func didReceiveMemoryWarning() {

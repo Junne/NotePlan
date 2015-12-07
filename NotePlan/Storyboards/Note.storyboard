@@ -8,7 +8,7 @@
         <!--Note-->
         <scene sceneID="AFO-53-7QC">
             <objects>
-                <viewController id="UEU-2Y-lNt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Note" id="UEU-2Y-lNt" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UDJ-2z-azm"/>
                         <viewControllerLayoutGuide type="bottom" id="RSO-jA-phF"/>

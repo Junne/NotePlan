@@ -1,96 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="df2-EB-GCU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="k1P-q8-kAk">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--Note-->
-        <scene sceneID="Ug7-0A-don">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Note" id="Azd-sR-6l7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Note" image="icon-mail" selectedImage="icon-mail-active" id="Gm4-0T-1yI"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7qV-gd-yWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-683" y="193"/>
-        </scene>
-        <!--Plan-->
-        <scene sceneID="NBK-Ro-QCL">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Plan" id="1hm-tJ-Id5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Plan" image="icon-password" selectedImage="icon-password-active" id="eT5-kx-ElQ"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h4d-5s-k9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-684" y="-121"/>
-        </scene>
-        <!--Item 2-->
-        <scene sceneID="UXx-xI-DZP">
-            <objects>
-                <viewController id="8UB-8S-ot8" customClass="MainTabBarViewController" customModule="NotePlan" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="o7Y-oy-omG"/>
-                        <viewControllerLayoutGuide type="bottom" id="SIs-sf-qJE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bbP-Qc-BfK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="bNI-xB-YlR"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2rg-ja-rh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1534" y="-558"/>
-        </scene>
-        <!--Plan-->
-        <scene sceneID="Vj7-du-f9A">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Plan" id="hmh-tS-cj2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="JOx-2d-H5S"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JPa-DJ-dKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1935" y="-1216"/>
-        </scene>
-        <!--Item 1-->
-        <scene sceneID="aEp-Sz-inT">
-            <objects>
-                <viewController id="lJe-Im-Iwd" customClass="MainTabBarViewController" customModule="NotePlan" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aUc-bT-3HB"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ngg-Pe-tAB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TJn-O8-VDd">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="8jL-Pw-cZe"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D3J-Ke-hPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1534" y="-1218"/>
-        </scene>
-        <!--Main Tab Bar View Controller-->
-        <scene sceneID="zdv-je-baD">
-            <objects>
-                <tabBarController id="df2-EB-GCU" customClass="MainTabBarViewController" customModule="NotePlan" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="S2p-NG-50L">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="8UB-8S-ot8" kind="relationship" relationship="viewControllers" id="lN4-mx-rYl"/>
-                        <segue destination="hmh-tS-cj2" kind="relationship" relationship="viewControllers" id="gnF-A7-NGl"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="olG-Dm-qBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2354" y="-888"/>
-        </scene>
         <!--Main Tab Bar View Controller-->
         <scene sceneID="5PS-jF-tWW">
             <objects>
@@ -100,20 +14,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="1hm-tJ-Id5" kind="relationship" relationship="viewControllers" id="AI0-A1-zo9"/>
-                        <segue destination="Azd-sR-6l7" kind="relationship" relationship="viewControllers" id="vRR-bz-Nmz"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR6-WZ-wQ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1124" y="49"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="icon-mail" width="26" height="18"/>
-        <image name="icon-mail-active" width="24" height="16"/>
-        <image name="icon-password" width="25" height="25"/>
-        <image name="icon-password-active" width="25" height="25"/>
-    </resources>
 </document>
