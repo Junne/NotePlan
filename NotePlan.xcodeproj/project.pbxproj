@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FDC4FF361619D822FD6A43D /* Pods_NotePlan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5048BF4AF1CC86160EDF4A2F /* Pods_NotePlan.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F581F4391C157CBE007D3C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581F4381C157CBE007D3C62 /* AppDelegate.swift */; };
 		F581F43E1C157CBE007D3C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F581F43C1C157CBE007D3C62 /* Main.storyboard */; };
 		F581F4401C157CBE007D3C62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F581F43F1C157CBE007D3C62 /* Assets.xcassets */; };
@@ -42,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D69B65178C556625BC9EDA3 /* Pods-NotePlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotePlan.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotePlan/Pods-NotePlan.release.xcconfig"; sourceTree = "<group>"; };
+		5048BF4AF1CC86160EDF4A2F /* Pods_NotePlan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotePlan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B2A529370EFF2A7BB2D551 /* Pods-NotePlan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotePlan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotePlan/Pods-NotePlan.debug.xcconfig"; sourceTree = "<group>"; };
 		F581F4351C157CBE007D3C62 /* NotePlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotePlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F581F4381C157CBE007D3C62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F581F43D1C157CBE007D3C62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FDC4FF361619D822FD6A43D /* Pods_NotePlan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E14AA43B717DB17FE628274 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8B2A529370EFF2A7BB2D551 /* Pods-NotePlan.debug.xcconfig */,
+				1D69B65178C556625BC9EDA3 /* Pods-NotePlan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1F9AFBD32E3B3226D0610B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5048BF4AF1CC86160EDF4A2F /* Pods_NotePlan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F581F42C1C157CBE007D3C62 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +119,8 @@
 				F581F44C1C157CBE007D3C62 /* NotePlanTests */,
 				F581F4571C157CBE007D3C62 /* NotePlanUITests */,
 				F581F4361C157CBE007D3C62 /* Products */,
+				0E14AA43B717DB17FE628274 /* Pods */,
+				F1F9AFBD32E3B3226D0610B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F581F45D1C157CBE007D3C62 /* Build configuration list for PBXNativeTarget "NotePlan" */;
 			buildPhases = (
+				05CB64E231C89B7E989B2D32 /* Check Pods Manifest.lock */,
 				F581F4311C157CBE007D3C62 /* Sources */,
 				F581F4321C157CBE007D3C62 /* Frameworks */,
 				F581F4331C157CBE007D3C62 /* Resources */,
+				9AB3A660DF98093D8DF31538 /* Embed Pods Frameworks */,
+				851009C3B987C35A2C8AD456 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -348,6 +375,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05CB64E231C89B7E989B2D32 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		851009C3B987C35A2C8AD456 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotePlan/Pods-NotePlan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AB3A660DF98093D8DF31538 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotePlan/Pods-NotePlan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F581F4311C157CBE007D3C62 /* Sources */ = {
@@ -500,6 +575,7 @@
 		};
 		F581F45E1C157CBE007D3C62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8B2A529370EFF2A7BB2D551 /* Pods-NotePlan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NotePlan/Info.plist;
@@ -511,6 +587,7 @@
 		};
 		F581F45F1C157CBE007D3C62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D69B65178C556625BC9EDA3 /* Pods-NotePlan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NotePlan/Info.plist;
@@ -587,6 +664,7 @@
 				F581F45F1C157CBE007D3C62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F581F4601C157CBE007D3C62 /* Build configuration list for PBXNativeTarget "NotePlanTests" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +673,7 @@
 				F581F4621C157CBE007D3C62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F581F4631C157CBE007D3C62 /* Build configuration list for PBXNativeTarget "NotePlanUITests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +682,7 @@
 				F581F4651C157CBE007D3C62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
