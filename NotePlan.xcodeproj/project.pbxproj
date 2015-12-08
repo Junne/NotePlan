@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8FDC4FF361619D822FD6A43D /* Pods_NotePlan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5048BF4AF1CC86160EDF4A2F /* Pods_NotePlan.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8FDC4FF361619D822FD6A43D /* Pods_NotePlan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5048BF4AF1CC86160EDF4A2F /* Pods_NotePlan.framework */; };
+		F51729B91C16A60000B8D9D3 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51729B81C16A60000B8D9D3 /* NoteTableViewController.swift */; };
+		F51729BC1C16B2EB00B8D9D3 /* Note.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51729BB1C16B2EB00B8D9D3 /* Note.storyboard */; };
+		F51729BE1C16B2F400B8D9D3 /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51729BD1C16B2F400B8D9D3 /* Plan.storyboard */; };
 		F581F4391C157CBE007D3C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581F4381C157CBE007D3C62 /* AppDelegate.swift */; };
 		F581F43E1C157CBE007D3C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F581F43C1C157CBE007D3C62 /* Main.storyboard */; };
 		F581F4401C157CBE007D3C62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F581F43F1C157CBE007D3C62 /* Assets.xcassets */; };
 		F581F4431C157CBE007D3C62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F581F4411C157CBE007D3C62 /* LaunchScreen.storyboard */; };
 		F581F44E1C157CBE007D3C62 /* NotePlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581F44D1C157CBE007D3C62 /* NotePlanTests.swift */; };
 		F581F4591C157CBE007D3C62 /* NotePlanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581F4581C157CBE007D3C62 /* NotePlanUITests.swift */; };
-		F581F46E1C157F24007D3C62 /* Note.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F581F46D1C157F24007D3C62 /* Note.storyboard */; };
-		F581F4701C157F2E007D3C62 /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F581F46F1C157F2E007D3C62 /* Plan.storyboard */; };
-		F581F4721C158179007D3C62 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581F4711C158179007D3C62 /* MainTabBarViewController.swift */; };
-		F581F4761C1585E0007D3C62 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581F4751C1585E0007D3C62 /* NoteViewController.swift */; };
 		F581F4781C1585EE007D3C62 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581F4771C1585EE007D3C62 /* PlanViewController.swift */; };
 		F581F47A1C158670007D3C62 /* NPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581F4791C158670007D3C62 /* NPService.swift */; };
 		F581F47C1C15868B007D3C62 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581F47B1C15868B007D3C62 /* Note.swift */; };
@@ -46,6 +45,9 @@
 		1D69B65178C556625BC9EDA3 /* Pods-NotePlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotePlan.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotePlan/Pods-NotePlan.release.xcconfig"; sourceTree = "<group>"; };
 		5048BF4AF1CC86160EDF4A2F /* Pods_NotePlan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotePlan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B2A529370EFF2A7BB2D551 /* Pods-NotePlan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotePlan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotePlan/Pods-NotePlan.debug.xcconfig"; sourceTree = "<group>"; };
+		F51729B81C16A60000B8D9D3 /* NoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
+		F51729BB1C16B2EB00B8D9D3 /* Note.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Note.storyboard; sourceTree = "<group>"; };
+		F51729BD1C16B2F400B8D9D3 /* Plan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
 		F581F4351C157CBE007D3C62 /* NotePlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotePlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F581F4381C157CBE007D3C62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F581F43D1C157CBE007D3C62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,10 +60,6 @@
 		F581F4541C157CBE007D3C62 /* NotePlanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotePlanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F581F4581C157CBE007D3C62 /* NotePlanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePlanUITests.swift; sourceTree = "<group>"; };
 		F581F45A1C157CBE007D3C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F581F46D1C157F24007D3C62 /* Note.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Note.storyboard; sourceTree = "<group>"; };
-		F581F46F1C157F2E007D3C62 /* Plan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
-		F581F4711C158179007D3C62 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
-		F581F4751C1585E0007D3C62 /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		F581F4771C1585EE007D3C62 /* PlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		F581F4791C158670007D3C62 /* NPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPService.swift; sourceTree = "<group>"; };
 		F581F47B1C15868B007D3C62 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
@@ -112,6 +110,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F51729BA1C16B2C900B8D9D3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F581F43C1C157CBE007D3C62 /* Main.storyboard */,
+				F51729BB1C16B2EB00B8D9D3 /* Note.storyboard */,
+				F51729BD1C16B2F400B8D9D3 /* Plan.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		F581F42C1C157CBE007D3C62 = {
 			isa = PBXGroup;
 			children = (
@@ -137,12 +145,12 @@
 		F581F4371C157CBE007D3C62 /* NotePlan */ = {
 			isa = PBXGroup;
 			children = (
+				F51729BA1C16B2C900B8D9D3 /* Storyboards */,
 				F581F4661C157D97007D3C62 /* Database */,
 				F581F4671C157D97007D3C62 /* General */,
 				F581F4681C157D97007D3C62 /* Network */,
 				F581F4691C157D97007D3C62 /* Note */,
 				F581F46A1C157D97007D3C62 /* Plan */,
-				F581F46B1C157D97007D3C62 /* Storyboards */,
 				F581F46C1C157D97007D3C62 /* Vendors */,
 				F581F4381C157CBE007D3C62 /* AppDelegate.swift */,
 				F581F43F1C157CBE007D3C62 /* Assets.xcassets */,
@@ -210,17 +218,6 @@
 			path = Plan;
 			sourceTree = "<group>";
 		};
-		F581F46B1C157D97007D3C62 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				F581F43C1C157CBE007D3C62 /* Main.storyboard */,
-				F581F46D1C157F24007D3C62 /* Note.storyboard */,
-				F581F46F1C157F2E007D3C62 /* Plan.storyboard */,
-				F581F4711C158179007D3C62 /* MainTabBarViewController.swift */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
 		F581F46C1C157D97007D3C62 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,7 +237,7 @@
 		F581F4741C1585C4007D3C62 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F581F4751C1585E0007D3C62 /* NoteViewController.swift */,
+				F51729B81C16A60000B8D9D3 /* NoteTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -352,10 +349,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F581F46E1C157F24007D3C62 /* Note.storyboard in Resources */,
+				F51729BC1C16B2EB00B8D9D3 /* Note.storyboard in Resources */,
 				F581F4431C157CBE007D3C62 /* LaunchScreen.storyboard in Resources */,
 				F581F4401C157CBE007D3C62 /* Assets.xcassets in Resources */,
-				F581F4701C157F2E007D3C62 /* Plan.storyboard in Resources */,
+				F51729BE1C16B2F400B8D9D3 /* Plan.storyboard in Resources */,
 				F581F43E1C157CBE007D3C62 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,10 +428,9 @@
 			files = (
 				F581F47A1C158670007D3C62 /* NPService.swift in Sources */,
 				F581F4801C1586BC007D3C62 /* Vendors.swift in Sources */,
-				F581F4721C158179007D3C62 /* MainTabBarViewController.swift in Sources */,
 				F581F4781C1585EE007D3C62 /* PlanViewController.swift in Sources */,
-				F581F4761C1585E0007D3C62 /* NoteViewController.swift in Sources */,
 				F581F4391C157CBE007D3C62 /* AppDelegate.swift in Sources */,
+				F51729B91C16A60000B8D9D3 /* NoteTableViewController.swift in Sources */,
 				F581F47E1C1586A2007D3C62 /* General.swift in Sources */,
 				F581F47C1C15868B007D3C62 /* Note.swift in Sources */,
 			);
@@ -528,7 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -566,7 +562,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

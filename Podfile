@@ -3,8 +3,9 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'NotePlan' do
-  pod 'RAMAnimatedTabBarController'
-  pod 'RealmSwift'
+  pod 'RAMAnimatedTabBarController', :git => 'https://github.com/Ramotion/animated-tab-bar.git', :commit => 'ed43b56'
+ 
+
 end
 
 target 'NotePlanTests' do

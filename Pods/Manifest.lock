@@ -1,18 +1,21 @@
 PODS:
-  - RAMAnimatedTabBarController (1.0.1)
-  - Realm (0.94.1):
-    - Realm/Headers (= 0.94.1)
-  - Realm/Headers (0.94.1)
-  - RealmSwift (0.94.1):
-    - Realm (= 0.94.1)
+  - RAMAnimatedTabBarController (1.0.2)
 
 DEPENDENCIES:
-  - RAMAnimatedTabBarController
-  - RealmSwift
+  - RAMAnimatedTabBarController (from `https://github.com/Ramotion/animated-tab-bar.git`,
+    commit `ed43b56`)
+
+EXTERNAL SOURCES:
+  RAMAnimatedTabBarController:
+    :commit: ed43b56
+    :git: https://github.com/Ramotion/animated-tab-bar.git
+
+CHECKOUT OPTIONS:
+  RAMAnimatedTabBarController:
+    :commit: ed43b56
+    :git: https://github.com/Ramotion/animated-tab-bar.git
 
 SPEC CHECKSUMS:
-  RAMAnimatedTabBarController: 58b220dff7ad27efff90663a8656f3a73f8e76b6
-  Realm: d999a6cf0b41577a077349c9cc9d496cc62a7d17
-  RealmSwift: 06b60ff5b1338755654d39aab44ac38001600f76
+  RAMAnimatedTabBarController: 7cdf1e33614c88020597839a1f304af8165b493f
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
