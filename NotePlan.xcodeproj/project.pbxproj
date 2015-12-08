@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7921F20E1C171C9D00AB0055 /* NoteCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921F20D1C171C9D00AB0055 /* NoteCollectionViewController.swift */; };
+		7921F2111C17306E00AB0055 /* NoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921F2101C17306E00AB0055 /* NoteCollectionViewCell.swift */; };
 		8FDC4FF361619D822FD6A43D /* Pods_NotePlan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5048BF4AF1CC86160EDF4A2F /* Pods_NotePlan.framework */; };
-		F51729B91C16A60000B8D9D3 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51729B81C16A60000B8D9D3 /* NoteTableViewController.swift */; };
 		F51729BC1C16B2EB00B8D9D3 /* Note.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51729BB1C16B2EB00B8D9D3 /* Note.storyboard */; };
 		F51729BE1C16B2F400B8D9D3 /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51729BD1C16B2F400B8D9D3 /* Plan.storyboard */; };
 		F581F4391C157CBE007D3C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581F4381C157CBE007D3C62 /* AppDelegate.swift */; };
@@ -44,8 +45,9 @@
 /* Begin PBXFileReference section */
 		1D69B65178C556625BC9EDA3 /* Pods-NotePlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotePlan.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotePlan/Pods-NotePlan.release.xcconfig"; sourceTree = "<group>"; };
 		5048BF4AF1CC86160EDF4A2F /* Pods_NotePlan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotePlan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7921F20D1C171C9D00AB0055 /* NoteCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCollectionViewController.swift; sourceTree = "<group>"; };
+		7921F2101C17306E00AB0055 /* NoteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCollectionViewCell.swift; sourceTree = "<group>"; };
 		C8B2A529370EFF2A7BB2D551 /* Pods-NotePlan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotePlan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotePlan/Pods-NotePlan.debug.xcconfig"; sourceTree = "<group>"; };
-		F51729B81C16A60000B8D9D3 /* NoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
 		F51729BB1C16B2EB00B8D9D3 /* Note.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Note.storyboard; sourceTree = "<group>"; };
 		F51729BD1C16B2F400B8D9D3 /* Plan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
 		F581F4351C157CBE007D3C62 /* NotePlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotePlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,14 @@
 				1D69B65178C556625BC9EDA3 /* Pods-NotePlan.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7921F20F1C17304B00AB0055 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7921F2101C17306E00AB0055 /* NoteCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F1F9AFBD32E3B3226D0610B0 /* Frameworks */ = {
@@ -205,6 +215,7 @@
 		F581F4691C157D97007D3C62 /* Note */ = {
 			isa = PBXGroup;
 			children = (
+				7921F20F1C17304B00AB0055 /* View */,
 				F581F4741C1585C4007D3C62 /* Controller */,
 			);
 			path = Note;
@@ -237,7 +248,7 @@
 		F581F4741C1585C4007D3C62 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F51729B81C16A60000B8D9D3 /* NoteTableViewController.swift */,
+				7921F20D1C171C9D00AB0055 /* NoteCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -430,8 +441,9 @@
 				F581F4801C1586BC007D3C62 /* Vendors.swift in Sources */,
 				F581F4781C1585EE007D3C62 /* PlanViewController.swift in Sources */,
 				F581F4391C157CBE007D3C62 /* AppDelegate.swift in Sources */,
-				F51729B91C16A60000B8D9D3 /* NoteTableViewController.swift in Sources */,
+				7921F2111C17306E00AB0055 /* NoteCollectionViewCell.swift in Sources */,
 				F581F47E1C1586A2007D3C62 /* General.swift in Sources */,
+				7921F20E1C171C9D00AB0055 /* NoteCollectionViewController.swift in Sources */,
 				F581F47C1C15868B007D3C62 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

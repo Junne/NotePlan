@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-NotePlan.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>RAMAnimatedTabBarController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>17BAA702FB92E468B29EB04C02B71256</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2489A3CD9D3BFCAD7B0D586C204FA6BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71059162AC87747950DE1A52AA28C009</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>834C99C668FD377A24937B065D487731</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8530DEDBC37DD75056E54EB064F88745</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A30E52349E1AB832FB866CAB700A8385</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
