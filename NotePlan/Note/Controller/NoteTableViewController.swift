@@ -42,7 +42,7 @@ class NoteTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("noteCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("NoteCell", forIndexPath: indexPath)
         cell.backgroundColor = UIColor.grayColor()
 
         // Configure the cell...
