@@ -9,6 +9,7 @@
 import UIKit
 
 private let reuseIdentifier = "NoteCell"
+private let topPadding:CGFloat = 20
 public let BGColor = UIColor(red: 56.0/255.0, green: 51/255.0, blue: 76/255.0, alpha: 1.0)
 
 class NoteCollectionViewController: UICollectionViewController {
@@ -21,9 +22,15 @@ class NoteCollectionViewController: UICollectionViewController {
         
         // self.clearsSelectionOnViewWillAppear = false
 
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView = UICollectionView(frame: CGRectMake(0, topPadding, screenWidth, screenHeight - topPadding), collectionViewLayout: CollectionViewLayout())
+        let nib = UINib(nibName: "CollectionViewCell", bundle: nil)
+        self.collectionView!.registerNib(nib, forCellWithReuseIdentifier: reuseIdentifier)
         self.collectionView?.backgroundColor = BGColor
         self.collectionView?.alwaysBounceVertical = false
+        self.collectionView!.contentInset = UIEdgeInsetsMake(0, 0, 10, 0);
+        self.collectionView!.alwaysBounceVertical = false
+        
         
         let random = arc4random() % 360 // 160 arc4random() % 360
         for index in 0 ..< 15 {
@@ -31,7 +38,6 @@ class NoteCollectionViewController: UICollectionViewController {
             noteBackgroudColorArray.addObject(color)
         }
 
-        // Do any additional setup after loading the view.
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -64,10 +70,14 @@ class NoteCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! NoteCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionViewCell
     
         cell.backgroundColor = noteBackgroudColorArray.objectAtIndex(noteBackgroudColorArray.count - 1 - indexPath.section) as? UIColor
-        cell.noteTitleLabel.text = "Notebook + " + String(indexPath.section + 1)
+        cell.titleLabel.text = "My Note + " + String(indexPath.section + 1)
+        cell.titleLine.alpha = 0.0
+        cell.textView.alpha = 0.0
+        cell.backButton.alpha = 0.0
+        cell.tag = indexPath.section
         
         return cell
     }

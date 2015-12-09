@@ -10,5 +10,9 @@ import UIKit
 
 class NoteCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var noteTitleLabel: UILabel!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLine: UIView!
+    @IBOutlet weak var noteTextView: UITextView!
+    @IBOutlet internal weak var labelLeadCons: NSLayoutConstraint!
 }
