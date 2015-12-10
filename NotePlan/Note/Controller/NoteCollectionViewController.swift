@@ -9,7 +9,7 @@
 import UIKit
 
 private let reuseIdentifier = "NoteCell"
-private let topPadding:CGFloat = 20
+private let topPadding:CGFloat = 44
 public let BGColor = UIColor(red: 56.0/255.0, green: 51/255.0, blue: 76/255.0, alpha: 1.0)
 
 class NoteCollectionViewController: UICollectionViewController {
@@ -30,7 +30,6 @@ class NoteCollectionViewController: UICollectionViewController {
         self.collectionView?.alwaysBounceVertical = false
         self.collectionView!.contentInset = UIEdgeInsetsMake(0, 0, 10, 0);
         self.collectionView!.alwaysBounceVertical = false
-        
         
         let random = arc4random() % 360 // 160 arc4random() % 360
         for index in 0 ..< 15 {
